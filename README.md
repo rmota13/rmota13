@@ -101,5 +101,5 @@ Aberto a conversas sobre integração de ERP, arquitetura de automação e engen
 </p>
 
 <p align="center">
-  <sub>Betim / Belo Horizonte — MG · Brasil</sub>
+  <sub>Belo Horizonte/MG · Brasil</sub>
 </p>
