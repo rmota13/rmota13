@@ -92,7 +92,7 @@ Diagnóstico com evidência, não com achismo. Depois a correção.
 
 ## Contato
 
-Aberto a conversas sobre integração de ERP, arquitetura de automação e engenharia de dados em ambiente industrial.
+Aberto a conversas sobre integração de ERP, arquitetura de automação e engenharia de dados em ambiente organizacional.
 
 <p>
   <a href="https://motainteligencia.com.br">🌐 motainteligencia.com.br</a> ·
