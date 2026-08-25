@@ -9,7 +9,7 @@
   <a href="https://motainteligencia.com.br">
     <img src="https://img.shields.io/badge/Mota_Intelig%C3%AAncia_de_Neg%C3%B3cio-00B4D8?style=for-the-badge&logoColor=white" alt="Mota Inteligência de Negócio">
   </a>
-  <a href="https://www.linkedin.com/in/SEU-LINKEDIN">
+  <a href="https://www.linkedin.com/in/rodrigo-mota-2619b422/">
     <img src="https://img.shields.io/badge/LinkedIn-0D1B2A?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="mailto:SEU-EMAIL@dominio.com.br">
