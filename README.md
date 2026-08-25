@@ -1,4 +1,4 @@
-<h1 align="center">Leandro Mota</h1>
+<h1 align="center">Rodrigo Mota</h1>
 
 <p align="center">
   <strong>Arquiteto de Integrações &amp; Automação Corporativa</strong><br>
