@@ -37,7 +37,7 @@ Dado confiável (view SQL)  →  Automação (n8n / Power Automate)  →  Interf
 
 ---
 
-## Stack
+## Stack 
 
 | Camada | Tecnologias |
 |---|---|
