@@ -25,7 +25,7 @@ Trabalho na camada onde o ERP encontra a operação real da empresa.
 
 Meu papel não é entregar tela bonita: é garantir que o dado saia confiável da origem, atravesse a automação sem se perder e chegue em quem decide com o servidor de pé no dia seguinte. Atuo do modelo de dados no SAP Business One até o container em produção, passando por integração, orquestração e governança de infraestrutura.
 
-Sou o ponto único de responsabilidade técnica interna numa indústria: quando uma integração cai às 6h da manhã, sou eu que atendo. Isso moldou como eu projeto prefiro solução simples que sobrevive a solução elegante que quebra.
+Sou o ponto único de responsabilidade técnica interna numa indústria: quando uma integração cai sou eu quem recebo os alertas e realizo a sustentação. Isso moldou como eu projeto prefiro solução simples que sobrevive a solução elegante que quebra.
 
 **Como eu penso arquitetura:**
 
