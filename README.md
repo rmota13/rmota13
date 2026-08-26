@@ -21,11 +21,11 @@
 
 ## Sobre
 
-Trabalho na camada onde o ERP encontra a operação real da empresa.
+Trabalho na camada onde o ERP encontra a operação real da empresa, o ponto em que o dado sai do SAP Business One e precisa chegar em quem decide, íntegro e no horário.
 
-Meu papel não é entregar tela bonita: é garantir que o dado saia confiável da origem, atravesse a automação sem se perder e chegue em quem decide com o servidor de pé no dia seguinte. Atuo do modelo de dados no SAP Business One até o container em produção, passando por integração, orquestração e governança de infraestrutura.
+Atuo de ponta a ponta: modelagem de dados no SAP B1 → view SQL confiável → orquestração em n8n → entrega em Power BI, app ou Teams. Incluindo o contêiner que roda isso em produção e o alerta que dispara quando algo quebra.
 
-Sou o ponto único de responsabilidade técnica interna numa indústria: quando uma integração cai sou eu quem recebo os alertas e realizo a sustentação. Isso moldou como eu projeto prefiro solução simples que sobrevive a solução elegante que quebra.
+Sou o responsável técnico interno de uma indústria: quando uma integração cai, o alerta chega em mim e a sustentação é minha, não existe "abrir chamado pra outra equipe". Isso moldou meu critério de projeto: prefiro a solução simples que sobrevive à solução elegante que quebra.
 
 **Como eu penso arquitetura:**
 
