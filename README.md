@@ -44,7 +44,7 @@ Dado confiável (view SQL)  →  Automação (n8n / Power Automate)  →  Interf
 | **Dados & ERP** | SQL Server · T-SQL · SAP Business One (Service Layer, DI/DTW) · Crystal Reports · PostgreSQL |
 | **Automação & Integração** | n8n self-hosted (queue mode) · Power Automate · Webhooks · REST APIs · Change Tracking |
 | **Backend** | Python · FastAPI · Uvicorn · autenticação por API key |
-| **BI & Visualização** | Power BI · DAX · modelagem dimensional · views materializadas |
+| **BI & Visualização** | Power BI · DAX · modelagem dimensional · views materializadas · Figma |
 | **Infraestrutura** | Linux (Ubuntu Server) · Docker · Docker Compose · Traefik · Nginx · Cloudflare · Windows Server |
 | **Microsoft 365** | SharePoint Online · Power Apps · Microsoft Teams (Adaptive Cards) · Graph API |
 | **Front & Protótipo** | Next.js · Tailwind CSS · Lovable · Typebot |
