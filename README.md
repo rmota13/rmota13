@@ -1,8 +1,8 @@
 <h1 align="center">Rodrigo Mota</h1>
 
 <p align="center">
-  <strong>Arquiteto de Integrações &amp; Automação Corporativa</strong><br>
-  SAP Business One · SQL Server · n8n · Power BI · FastAPI · Docker
+  <strong>Coordenador de BI · Arquitetura de Soluções · Automação & IA Aplicada</strong><br>
+  Dados · Qlik Cloud · AWS · Power BI · Python · SQL · APIs · n8n · SAP Business One
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
   <a href="https://www.linkedin.com/in/rodrigo-mota-2619b422/">
     <img src="https://img.shields.io/badge/LinkedIn-0D1B2A?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="contato@motainteligencia.com.br">
+  <a href="mailto:contato@motainteligencia.com.br">
     <img src="https://img.shields.io/badge/E--mail-1B263B?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail">
   </a>
 </p>
@@ -21,96 +21,98 @@
 
 ## Sobre
 
-Trabalho na camada onde o ERP encontra a operação real da empresa, o ponto em que o dado sai do SAP Business One e precisa chegar em quem decide, íntegro e no horário.
+Trabalho conectando **dados, sistemas e processos** para transformar operações complexas em soluções confiáveis, escaláveis e úteis para o negócio.
 
-Atuo de ponta a ponta: modelagem de dados no SAP B1 → view SQL confiável → orquestração em n8n → entrega em Power BI, app ou Teams. Incluindo o contêiner que roda isso em produção e o alerta que dispara quando algo quebra.
+Minha atuação combina hoje coordenação de BI, qualidade e confiabilidade de dados, automação e IA aplicada, com experiência prática em Qlik Cloud e ambiente AWS. Essa camada se soma a uma trajetória construída em Power BI, SQL Server, SAP Business One, Python, n8n, APIs REST e Microsoft 365.
 
-Sou o responsável técnico interno de uma indústria: quando uma integração cai, o alerta chega em mim e a sustentação é minha, não existe "abrir chamado pra outra equipe". Isso moldou meu critério de projeto: prefiro a solução simples que sobrevive à solução elegante que quebra.
-
-**Como eu penso arquitetura:**
-
-```
-Dado confiável (view SQL)  →  Automação (n8n / Power Automate)  →  Interface (Power BI / app / Teams)
-                                      ↓
-                          Validação operacional antes de escalar
-```
+O ponto em comum entre essas experiências é o mesmo: entender o problema na origem, estruturar uma solução sustentável e acompanhar o que acontece depois que ela entra em produção.
 
 ---
 
-## Stack 
+## O que eu resolvo
 
-| Camada | Tecnologias |
+### 🔗 Integrações & Automação
+
+Conexão entre ERP, APIs, e-commerce, Microsoft 365 e aplicações internas, com validação, idempotência, tratamento de exceções e observabilidade.
+
+### 📊 Dados, BI & Confiabilidade
+
+Dashboards, pipelines, reconciliação de indicadores, auditorias e monitoramento de cadeias de carga. O objetivo não é apenas atualizar o painel, mas garantir que a informação entregue seja confiável.
+
+### 🤖 IA aplicada
+
+Aplicação de IA em classificação, análise, enriquecimento de dados e geração de insights, sempre com contexto, controles de integridade e revisão humana quando necessária.
+
+### 🧩 Sustentação & Evolução
+
+Diagnóstico de falhas, correções, monitoramento e melhoria contínua de soluções críticas depois do go-live.
+
+---
+
+## Stack e contexto atual
+
+| Camada | Tecnologias e práticas |
 |---|---|
-| **Dados & ERP** | SQL Server · T-SQL · SAP Business One (Service Layer, DI/DTW) · Crystal Reports · PostgreSQL |
-| **Automação & Integração** | n8n self-hosted (queue mode) · Power Automate · Webhooks · REST APIs · Change Tracking |
-| **Backend** | Python · FastAPI · Uvicorn · autenticação por API key |
-| **BI & Visualização** | Power BI · DAX · modelagem dimensional · views materializadas · Figma |
-| **Infraestrutura** | Linux (Ubuntu Server) · Docker · Docker Compose · Traefik · Nginx · Cloudflare · Windows Server |
-| **Microsoft 365** | SharePoint Online · Power Apps · Microsoft Teams (Adaptive Cards) · Graph API |
-| **Front & Protótipo** | Next.js · Tailwind CSS · Lovable · Typebot |
+| **BI & Dados** | Qlik Cloud · Power BI · SQL Server · QVD · ETL/ELT · modelagem · qualidade de dados |
+| **Cloud & Operação** | AWS · Amazon S3 · Docker · Linux · observabilidade · alertas |
+| **Automação & Integração** | n8n · Power Automate · APIs REST · Webhooks · JSON |
+| **Backend & Processamento** | Python · FastAPI · SQL · integrações empresariais |
+| **ERP & Sistemas** | SAP Business One · Service Layer · Microsoft 365 · SharePoint · Teams |
+| **IA aplicada** | LLMs · classificação · análise assistida · enriquecimento de dados · automação inteligente |
 
 ---
 
-## O que eu construo
+## Projetos em destaque
 
-### 🔄 Integrações ERP ↔ Aplicações
+### SAP Commerce Integration Platform
 
-Sincronização bidirecional entre SAP Business One e aplicações internas via n8n e Service Layer. Trabalho com estratégias distintas por criticidade: batch horário para volume, Change Tracking para tempo real e consulta sob demanda via webhook para operações sensíveis. Paginação de payload e controle de janela de execução para não competir com a carga transacional do ERP.
+Plataforma de integração ponta a ponta entre canais digitais e SAP Business One, cobrindo captura, normalização, validação, criação de pedidos, ciclo financeiro, idempotência, quarentena, logs e reprocessamento seguro.
 
-### 🗄️ Camada de dados sobre SAP B1
+🔗 [Case no site](https://www.motainteligencia.com.br/projetos/sap-commerce-integration-platform)  
+🔗 [Repositório público](https://github.com/rmota13/sap-business-one-integration-platform)
 
-Views SQL como contrato entre o ERP e o consumo: nomenclatura padronizada, lógica de negócio centralizada, relatórios desacoplados da estrutura interna do SAP. Quando performance vira problema, substituí uma view crítica que dominava a CPU do SQL Server na janela de refresh por uma tabela materializada com índice columnstore, alimentada por stored procedure agendada, mantendo todas as conexões dos relatórios intactas, correção de uma solução feita por outra ADM.
+### BI Reliability & Data Quality
 
-### 📊 Inteligência de negócio
+Experiências recentes em auditoria automatizada de indicadores, reconciliação entre base, transformação e dashboard, monitoramento de cadeias de carga e validação da entrega final consumida pelo usuário.
 
-Power BI conectado direto ao SQL Server do SAP B1, com modelo semântico próprio não relatório sobre tabela crua. A regra de negócio mora na view; o Power BI consome contrato, não estrutura interna do ERP.
+### IA aplicada a dados
 
-Construo indicador que muda comportamento, não painel que decora reunião: gestão de pedidos em aberto com sinalização de autorização, adiantamento e follow-up pendente; projeção de faturamento; e modelo de scoring consultivo que classifica oportunidade de venda em escala de 0 a 100, com faixas de prioridade e temperatura de cliente para direcionar o time comercial.
-
-Carga sincronizada com a janela de refresh, log de execução e monitoramento de custo de consulta, dashboard que não atualiza no horário é dashboard que ninguém usa. O critério é sempre o mesmo: se o número aparece no painel e ninguém decide diferente por causa dele, o indicador está errado não a ferramenta.
-
-### 🏭 Sistemas operacionais internos
-
-MES para chão de fábrica com controle de lote, apontamento por operador e painel de liderança, migrado de SQLite para PostgreSQL em container. Central de Pedidos em Kanban espelhando o fluxo comercial e de faturamento, com máquina de estados para divergências de NF-e, regras de elegibilidade de CC-e ancoradas na legislação fiscal e SLA com semáforo.
-
-### ⚙️ Automação de processos de negócio
-
-Conciliação automatizada de repasses de marketplace contra o ERP. Distribuição de documentos por WhatsApp com origem no SharePoint. Alertas executivos em Microsoft Teams via Adaptive Cards: resumo, leitura contextual e impacto financeiro, não só o número cru.
-
-### 🛡️ Governança de infraestrutura
-
-Observabilidade e capacity planning em VPS compartilhada com múltiplos fornecedores externos. Limites de recurso por container, diagnóstico de contenção de I/O e memória, isolamento de ambientes e definição clara de fronteira de responsabilidade entre quem constrói workflow e quem responde pelo servidor.
+Uso de Python e IA para tratamento, padronização, classificação e enriquecimento de dados textuais, com controles de integridade e reaproveitamento de conhecimento já validado.
 
 ---
 
 ## Como eu trabalho
 
-- **MVP primeiro.** Solução mínima funcional em produção vale mais que arquitetura completa no slide.
-- **Dado antes de interface.** Dashboard sobre dado ruim é mentira bem formatada.
-- **Baixo custo por princípio.** Dependência paga só quando não existe caminho sustentável sem ela.
-- **Reutilizável, não único.** Padrão de nomenclatura, padrão de card, padrão de view para que o próximo caso leve horas, não semanas.
-- **Escrever o risco.** Quando uma decisão técnica tem risco operacional ou fiscal, ele vai documentado para a diretoria antes de virar incidente.
+- **Problema antes da ferramenta.** A tecnologia entra depois de entender o processo e o impacto.
+- **Dado confiável antes da visualização.** Dashboard não corrige origem ruim.
+- **Produção faz parte da arquitetura.** Logs, alertas, exceções e reprocessamento entram no desenho.
+- **Evolução incremental.** Prefiro uma solução operável que pode crescer a uma arquitetura bonita que não sobrevive ao dia a dia.
+- **Contexto de negócio.** A solução precisa reduzir fricção, risco ou tempo — não apenas adicionar tecnologia.
 
 ---
 
-## Diagnóstico é parte do trabalho
+## Mota Inteligência de Negócio
 
-Boa parte do que faço não é construir, é descobrir por que algo quebrou.
+Além da atuação profissional, desenvolvo a **Mota Inteligência de Negócio**, com foco em soluções sob medida para empresas que precisam:
 
-Já rastreei colisão de chave primária em rotina interna do SAP via Extended Events, identifiquei consumo desproporcional de banco causado por armazenamento indevido de histórico de conversas, isolei picos de CPU de antivírus em VM de Service Layer e mapeei crescimento silencioso de base em ambiente de staging que funcionava, na prática, como produção.
+- conectar sistemas e ERPs;
+- automatizar processos;
+- estruturar dados e BI;
+- aplicar IA com propósito de negócio;
+- sustentar e evoluir soluções críticas.
 
-Diagnóstico com evidência, não com achismo. Depois a correção.
+🌐 [motainteligencia.com.br](https://motainteligencia.com.br)
 
 ---
 
 ## Contato
 
-Aberto a conversas sobre integração de ERP, arquitetura de automação e engenharia de dados em ambiente organizacional.
+Aberto a conversas sobre projetos de integração, automação, BI, dados e IA aplicada.
 
 <p>
-  <a href="https://motainteligencia.com.br">🌐 motainteligencia.com.br</a> ·
+  <a href="https://motainteligencia.com.br">🌐 Site</a> ·
   <a href="https://www.linkedin.com/in/rodrigo-mota-2619b422/">💼 LinkedIn</a> ·
-  <a href="contato@motainteligencia.com.br">✉️ E-mail</a>
+  <a href="mailto:contato@motainteligencia.com.br">✉️ E-mail</a>
 </p>
 
 <p align="center">
